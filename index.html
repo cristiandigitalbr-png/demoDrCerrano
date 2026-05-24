@@ -157,17 +157,12 @@
   }
 
   .hero-eyebrow {
-    font-size: 12px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: var(--gold-light);
-    margin-bottom: 20px;
-    font-weight: 400;
+    display: none;
   }
 
   .hero-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(42px, 7vw, 80px);
+    font-size: clamp(34px, 6vw, 80px);
     font-weight: 300;
     color: white;
     line-height: 1.1;
@@ -320,6 +315,7 @@
     line-height: 1.8;
     color: var(--gray);
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .about-stats {
@@ -394,9 +390,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
+    justify-items: center;
   }
 
   .especialidad-card {
+    width: 100%;
+    max-width: 340px;
     background: white;
     border-radius: 4px;
     padding: 36px 30px;
@@ -647,12 +646,13 @@
 
   .footer-logo {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
+    font-size: clamp(14px, 3vw, 22px);
     font-weight: 500;
     color: var(--teal-light);
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 8px;
+    white-space: nowrap;
   }
 
   .footer-sub {
@@ -864,12 +864,12 @@
 
 <!-- CONTACTO -->
 <div style="background:white; padding: 100px 60px;" id="contacto">
-  <div class="contacto-section">
+  <div style="max-width:600px; margin:0 auto;">
     <div class="contacto-info">
       <div class="section-label">Contacto</div>
-      <h2 class="section-title">Reservá tu <em>turno</em></h2>
+      <h2 class="section-title">Reservá tu turno</h2>
       <div class="section-divider"></div>
-      <p style="color:var(--gray); font-size:15px; line-height:1.8; margin-bottom:8px;">Estamos para atenderte. Comunicate con nosotros por teléfono o completá el formulario.</p>
+      <p style="color:var(--gray); font-size:15px; line-height:1.8; margin-bottom:8px;">Estamos para atenderte. Comunicate con nosotros por teléfono o WhatsApp.</p>
       <div class="contacto-items">
         <div class="contacto-item">
           <div class="contacto-icon">📍</div>
@@ -894,52 +894,16 @@
         </div>
       </div>
     </div>
-
-    <div class="contacto-form">
-      <div class="form-title">Solicitá tu turno</div>
-      <div class="form-subtitle">Te contactamos a la brevedad para confirmar</div>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Nombre</label>
-          <input type="text" placeholder="Tu nombre">
-        </div>
-        <div class="form-group">
-          <label>Teléfono</label>
-          <input type="tel" placeholder="Tu número">
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Especialidad</label>
-        <select>
-          <option value="">Seleccioná una especialidad</option>
-          <option>Medicina General – Dr. Marcelo Cerrano</option>
-          <option>Ginecología y Obstetricia – Dra. Adriana Daghero</option>
-          <option>Traumatología y Ortopedia – Dr. Luis Chiapello</option>
-          <option>Dermatología y Estética – Dra. Paula Simonassi</option>
-          <option>Pediatría – Neumonología Infantil – Dra. Adriana Velez</option>
-          <option>Flebología · Cirugía General y Vascular – Dr. Cesar Sena</option>
-          <option>Nutricionista – Lic. Daniela Giorgi</option>
-          <option>Psicología – Lic. Dahyana Mora</option>
-          <option>Psicología – Lic. Cintia Rossi</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Mensaje (opcional)</label>
-        <textarea placeholder="¿Alguna consulta o preferencia de horario?"></textarea>
-      </div>
-      <button class="btn-form">Enviar Solicitud</button>
-    </div>
   </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">Consultorios de Medicina Integral</div>
-  <div class="footer-sub">I N T E G R A L</div>
   <div class="footer-divider"></div>
   <div class="footer-text">
     Mitre Nº 56, Jovita, Córdoba · Tel: 3385-400098<br>
-    <span style="font-size:12px; color:rgba(255,255,255,0.35); margin-top:12px; display:block;">© 2025 CMI · Consultorios de Medicina Integral · Todos los derechos reservados</span>
+    <span style="font-size:12px; color:rgba(255,255,255,0.35); margin-top:12px; display:block;">© 2025 CMI · Todos los derechos reservados</span>
   </div>
 </footer>
 
