@@ -387,15 +387,23 @@
   }
 
   .especialidades-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 24px;
-    justify-items: center;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .especialidades-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      align-items: start;
+    }
   }
 
   .especialidad-card {
     width: 100%;
-    max-width: 340px;
+    max-width: 500px;
     background: white;
     border-radius: 4px;
     padding: 36px 30px;
