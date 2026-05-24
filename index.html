@@ -457,7 +457,7 @@
   /* MID BANNER */
   .mid-banner {
     position: relative;
-    height: 400px;
+    height: 380px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -471,13 +471,13 @@
     background-image: url('WhatsApp_Image_2026-05-24_at_09_11_39.jpeg');
     background-size: cover;
     background-position: center 30%;
-    filter: brightness(0.3);
+    filter: brightness(0.15);
   }
 
   .mid-banner-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(42,138,138,0.5), rgba(26,26,26,0.3));
+    background: linear-gradient(135deg, rgba(13,27,62,0.85), rgba(42,138,138,0.4));
   }
 
   .mid-banner-content {
@@ -487,22 +487,34 @@
   }
 
   .mid-banner-content .section-label {
-    color: var(--gold-light);
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
   }
 
   .mid-banner-content .section-title {
     color: white;
     font-size: clamp(28px, 4vw, 48px);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.5);
   }
 
   .mid-banner-content p {
-    color: rgba(255,255,255,0.8);
-    font-size: 16px;
+    color: rgba(255,255,255,0.75);
+    font-size: 15px;
     margin-bottom: 32px;
-    max-width: 500px;
+    max-width: 460px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.7;
+  }
+
+  .mid-banner-divider {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    margin: 0 auto 20px;
   }
 
   /* CONTACTO */
@@ -867,42 +879,40 @@
   <div class="mid-banner-bg"></div>
   <div class="mid-banner-overlay"></div>
   <div class="mid-banner-content">
-    <div class="section-label" style="color:#f0d080; font-size:13px; font-weight:600;">¡Reserva Fácil!</div>
+    <div class="section-label" style="color:#c9a84c; font-size:11px; font-weight:600; letter-spacing:5px;">TURNO ONLINE</div>
+    <div class="mid-banner-divider"></div>
     <h2 class="section-title">¿Necesitás un turno?</h2>
-    <p>Contactanos directamente por WhatsApp y te respondemos a la brevedad.</p>
-    <a href="https://wa.me/543385400098" target="_blank" class="btn-primary">💬 Escribinos por WhatsApp</a>
+    <p>Nuestro equipo está disponible para atenderte. Escribinos directamente por WhatsApp.</p>
+    <a href="https://wa.me/543385400098" target="_blank" class="btn-primary" style="background:transparent; border:1px solid rgba(201,168,76,0.7); color:#c9a84c; letter-spacing:2px; font-size:13px;">💬 Escribinos por WhatsApp</a>
   </div>
 </div>
 
 <!-- CONTACTO -->
-<div style="background:white; padding: 60px 24px;" id="contacto">
-  <div style="max-width:600px; margin:0 auto;">
-    <div class="contacto-info">
-      <div class="section-label">Contacto</div>
-      <h2 class="section-title">Reservá tu turno</h2>
-      <div class="section-divider"></div>
-      <p style="color:var(--gray); font-size:15px; line-height:1.8; margin-bottom:8px;">Estamos para atenderte. Comunicate con nosotros por teléfono o WhatsApp.</p>
-      <div class="contacto-items">
-        <div class="contacto-item">
-          <div class="contacto-icon">📍</div>
-          <div class="contacto-item-text">
-            <strong>Dirección</strong>
-            <span>Mitre Nº 56, Jovita, Córdoba</span>
-          </div>
+<div style="background: linear-gradient(160deg, #0d1b3e 0%, #1a3a4a 100%); padding: 60px 24px;" id="contacto">
+  <div style="max-width:600px; margin:0 auto; text-align:center;">
+    <div style="font-size:11px; letter-spacing:5px; text-transform:uppercase; color:#c9a84c; margin-bottom:16px; font-weight:600;">Contacto</div>
+    <h2 style="font-family:'Cormorant Garamond',serif; font-size:clamp(28px,4vw,44px); font-weight:400; color:white; margin-bottom:12px;">Reservá tu turno</h2>
+    <div style="width:40px; height:1px; background:#c9a84c; margin:0 auto 32px;"></div>
+    <div style="display:flex; flex-direction:column; gap:20px;">
+      <div style="display:flex; align-items:center; gap:20px; background:rgba(255,255,255,0.05); border:1px solid rgba(201,168,76,0.2); border-radius:6px; padding:20px 24px;">
+        <div style="width:44px; height:44px; background:rgba(42,138,138,0.3); border-radius:4px; display:flex; align-items:center; justify-content:center; font-size:20px; flex-shrink:0;">📍</div>
+        <div style="text-align:left;">
+          <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#c9a84c; margin-bottom:4px;">Dirección</div>
+          <div style="font-size:16px; color:white; font-weight:500;">Mitre Nº 56, Jovita, Córdoba</div>
         </div>
-        <div class="contacto-item">
-          <div class="contacto-icon">📞</div>
-          <div class="contacto-item-text">
-            <strong>Teléfono / WhatsApp</strong>
-            <span><a href="tel:3385400098" style="color:var(--teal);text-decoration:none;">3385-400098</a></span>
-          </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:20px; background:rgba(255,255,255,0.05); border:1px solid rgba(201,168,76,0.2); border-radius:6px; padding:20px 24px;">
+        <div style="width:44px; height:44px; background:rgba(42,138,138,0.3); border-radius:4px; display:flex; align-items:center; justify-content:center; font-size:20px; flex-shrink:0;">📞</div>
+        <div style="text-align:left;">
+          <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#c9a84c; margin-bottom:4px;">Teléfono / WhatsApp</div>
+          <a href="tel:3385400098" style="font-size:18px; color:#4db8b8; font-weight:600; text-decoration:none;">3385-400098</a>
         </div>
-        <div class="contacto-item">
-          <div class="contacto-icon">🕐</div>
-          <div class="contacto-item-text">
-            <strong>Horario de Atención</strong>
-            <span>Lunes a Sábados</span>
-          </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:20px; background:rgba(255,255,255,0.05); border:1px solid rgba(201,168,76,0.2); border-radius:6px; padding:20px 24px;">
+        <div style="width:44px; height:44px; background:rgba(42,138,138,0.3); border-radius:4px; display:flex; align-items:center; justify-content:center; font-size:20px; flex-shrink:0;">🕐</div>
+        <div style="text-align:left;">
+          <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#c9a84c; margin-bottom:4px;">Horario de Atención</div>
+          <div style="font-size:16px; color:white; font-weight:500;">Lunes a Sábados</div>
         </div>
       </div>
     </div>
