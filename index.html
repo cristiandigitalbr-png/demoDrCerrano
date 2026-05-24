@@ -303,11 +303,11 @@
     background: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 60px;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 60px;
+    padding: 60px 40px;
   }
 
   .about-text p {
@@ -649,18 +649,20 @@
     background: var(--dark);
     color: rgba(255,255,255,0.6);
     text-align: center;
-    padding: 48px 60px;
+    padding: 48px 24px;
+    overflow: hidden;
   }
 
   .footer-logo {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(14px, 3vw, 22px);
+    font-size: clamp(13px, 3.5vw, 20px);
     font-weight: 500;
     color: var(--teal-light);
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-bottom: 8px;
-    white-space: nowrap;
+    text-align: center;
+    padding: 0 16px;
   }
 
   .footer-sub {
@@ -716,11 +718,12 @@
   @media (max-width: 768px) {
     nav { padding: 16px 24px; }
     .nav-links { display: none; }
-    section { padding: 60px 24px; }
-    .about, .contacto-section { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px; }
-    .about-image { height: 300px; }
+    section { padding: 40px 20px; }
+    .about, .contacto-section { grid-template-columns: 1fr; gap: 30px; padding: 40px 20px; }
+    .about-image { height: 260px; }
     .form-row { grid-template-columns: 1fr; }
-    .especialidades { padding: 60px 24px; }
+    .especialidades { padding: 40px 20px; }
+    .especialidades-header { margin-bottom: 32px; }
   }
 </style>
 </head>
@@ -806,7 +809,7 @@
 </div>
 
 <!-- ESPECIALIDADES -->
-<div style="background:var(--off-white); padding: 100px 60px;">
+<div style="background:var(--off-white); padding: 60px 24px;">
   <div class="especialidades" id="especialidades">
     <div class="especialidades-header">
       <div class="section-label">Nuestro Equipo</div>
@@ -871,7 +874,7 @@
 </div>
 
 <!-- CONTACTO -->
-<div style="background:white; padding: 100px 60px;" id="contacto">
+<div style="background:white; padding: 60px 24px;" id="contacto">
   <div style="max-width:600px; margin:0 auto;">
     <div class="contacto-info">
       <div class="section-label">Contacto</div>
@@ -915,10 +918,7 @@
   </div>
 </footer>
 
-<!-- WHATSAPP FLOTANTE -->
-<a href="https://wa.me/543385400098" target="_blank" class="whatsapp-float" title="Escribinos por WhatsApp">
-  💬
-</a>
+
 
 </body>
 </html>
